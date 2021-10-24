@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Alpha Cipher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>The Alpha Cipher</h1>
+
+    <p class="intro">
+    The Alpha Cipher will encode a message - or decipher another's message<sup>*</sup> - for you. Enter your message and your cipher key below. <br />
+    <small><sup>*</sup> Decode function is a little faulty.</small>
+    </p>
+
+    <div id="form-wrap">
+        <form action="">
+          <label for="message">Message:</label>
+          <input id="message" type="text" name="message" class="message" />
+
+          <label for="key">Cipher key:</label>
+          <input id="key" type="number" name="key" class="key" />
+
+          <div class="u-spacer">
+            <button type="button" id="encode" value="encode">Encode</button>
+            <button type="button" id="decode" value="decode">Decode</button>
+          </div>
+
+        </form>
+    </div>
+
+    <div id="content-wrap" class="hidden">
+        <h2 id="dynamic-heading"></h2>
+        <p id="dynamic-message"></p>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
